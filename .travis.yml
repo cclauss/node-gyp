@@ -10,12 +10,13 @@ matrix:
 install:
     #- pip install -r requirements.txt
     - pip install flake8  # pytest  # add another testing frameworks later
+    - npm install eslint tape --save-dev
 before_script:
     # stop the build if there are Python syntax errors or undefined names
     - flake8 . --count --select=E9,F63,F72,F82 --show-source --statistics
     # exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --ignore=E11,E12,W504 --max-complexity=10 --max-line-length=127 --statistics
-    - npm install -g eslint tape node-gyp
+    - npm install -g node-gyp
 script:
     - npm test
     #- pytest --capture=sys  # add other tests here
