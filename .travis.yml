@@ -10,7 +10,7 @@ matrix:
 install:
     #- pip install -r requirements.txt
     - pip install flake8  # pytest  # add another testing frameworks later
-    - npm install eslint graceful-fs nopt npmlog tape --save-dev
+    - npm install eslint graceful-fs nopt npmlog require-inject tape --save-dev
 before_script:
     # stop the build if there are Python syntax errors or undefined names
     - flake8 . --count --select=E9,F63,F72,F82 --show-source --statistics
