@@ -60,7 +60,7 @@ before_script:
   - flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
   # exit-zero treats all errors as warnings.  Two space indentation is OK.  The GitHub editor is 127 chars wide
   - flake8 . --count --exit-zero --ignore=E111,E114,W503 --max-complexity=10 --max-line-length=127 --statistics
-  - echo "EXPERIMENTAL_NODE_GYP_PYTHON3: ${EXPERIMENTAL_NODE_GYP_PYTHON3}"
+  - echo "EXPERIMENTAL_NODE_GYP_PYTHON3 is ${EXPERIMENTAL_NODE_GYP_PYTHON3}"
   - ${NODE_GYP_FORCE_PYTHON} --version || true
   - npm install
 script:
