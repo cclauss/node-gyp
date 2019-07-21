@@ -37,9 +37,8 @@ matrix:
       env: NODE_GYP_FORCE_PYTHON=python3.6 EXPERIMENTAL_NODE_GYP_PYTHON3=1
     - name: "Python 3.6 on Windows"
       os: windows
-      language: cpp
-      # language: node_js
-      # node_js: 12  # node
+      language: node_js
+      node_js: node
       env: >-
         PATH=/c/Python36:/c/Python36/Scripts:$PATH
         NODE_GYP_FORCE_PYTHON=/c/Python36/python.exe
