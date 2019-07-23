@@ -6,7 +6,7 @@ const execFile = require('child_process').execFile
 const PythonFinder = findPython.test.PythonFinder
 
 delete process.env.PYTHON
-delete process.env.NODE_GYP_FORCE_PYTHON
+// delete process.env.NODE_GYP_FORCE_PYTHON
 
 require('npmlog').level = 'warn'
 
@@ -17,8 +17,13 @@ test('find python', function (t) {
     t.strictEqual(err, null)
     var proc = execFile(found, ['-V'], function (err, stdout, stderr) {
       t.strictEqual(err, null)
-      t.strictEqual(stderr, '')
-      t.ok(/Python 3/.test(stdout))
+      if (process.env.NODE_GYP_FORCE_PYTHON === '1') {
+        t.strictEqual(stderr, '')
+        t.ok(/Python 3/.test(stdout))  // Python 3 writes the version to stdout
+      } else {
+        t.strictEqual(stdout, '')
+        t.ok(/Python 2/.test(stderr))  // Python 2 writes the version to stderr
+      }
     })
     proc.stdout.setEncoding('utf-8')
     proc.stderr.setEncoding('utf-8')
