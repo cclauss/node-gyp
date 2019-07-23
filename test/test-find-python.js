@@ -17,7 +17,7 @@ test('find python', function (t) {
     t.strictEqual(err, null)
     var proc = execFile(found, ['-V'], function (err, stdout, stderr) {
       t.strictEqual(err, null)
-      if (process.env.NODE_GYP_FORCE_PYTHON === '1') {
+      if (process.env.NODE_GYP_FORCE_PYTHON === 1) {
         t.strictEqual(stderr, '')
         t.ok(/Python 3/.test(stdout)) // Python 3 writes the version to stdout
       } else {
