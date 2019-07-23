@@ -6,7 +6,7 @@ const execFile = require('child_process').execFile
 const PythonFinder = findPython.test.PythonFinder
 
 delete process.env.PYTHON
-// delete process.env.NODE_GYP_FORCE_PYTHON
+delete process.env.NODE_GYP_FORCE_PYTHON
 
 require('npmlog').level = 'warn'
 
