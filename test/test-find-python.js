@@ -19,10 +19,10 @@ test('find python', function (t) {
       t.strictEqual(err, null)
       if (process.env.NODE_GYP_FORCE_PYTHON === '1') {
         t.strictEqual(stderr, '')
-        t.ok(/Python 3/.test(stdout))  // Python 3 writes the version to stdout
+        t.ok(/Python 3/.test(stdout)) // Python 3 writes the version to stdout
       } else {
         t.strictEqual(stdout, '')
-        t.ok(/Python 2/.test(stderr))  // Python 2 writes the version to stderr
+        t.ok(/Python 2/.test(stderr)) // Python 2 writes the version to stderr
       }
     })
     proc.stdout.setEncoding('utf-8')
