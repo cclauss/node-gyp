@@ -1311,6 +1311,10 @@ def CLTVersion():
   for key in [MAVERICKS_PKG_ID, STANDALONE_PKG_ID, FROM_XCODE_PKG_ID]:
     try:
       output = GetStdout(['/usr/sbin/pkgutil', '--pkg-info', key])
+      try:  # On Python 3 stdout will be bytes
+        output = output.decode('utf-8')
+      except AttributeError:  # stdout is str
+        pass
       return re.search(regex, output).groupdict()['version']
     except:
       continue
