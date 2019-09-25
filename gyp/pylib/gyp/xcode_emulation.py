@@ -1328,7 +1328,6 @@ def GetStdoutQuiet(cmdlist):
     out = out.decode("utf-8")
   if job.returncode != 0:
     raise GypError('Error %d running %s' % (job.returncode, cmdlist[0]))
-  try
   return out.rstrip('\n')
 
 
