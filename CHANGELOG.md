@@ -1,5 +1,12 @@
 # Changelog
 
+### [8.2.1](https://www.github.com/cclauss/node-gyp/compare/v8.2.0...v8.2.1) (2021-09-19)
+
+
+### Miscellaneous
+
+* refactor the creation of config.gypi file ([f2ad87f](https://www.github.com/cclauss/node-gyp/commit/f2ad87ff65f98ad66daa7225ad59d99b759a2b07))
+
 ## [8.2.0](https://www.github.com/nodejs/node-gyp/compare/v8.1.0...v8.2.0) (2021-08-23)
 
 
