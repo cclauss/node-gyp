@@ -1,5 +1,18 @@
 # Changelog
 
+### [8.1.1](https://www.github.com/cclauss/node-gyp/compare/v8.1.0...v8.1.1) (2021-09-19)
+
+
+### Bug Fixes
+
+* add error arg back into catch block for older Node.js users ([5cde818](https://www.github.com/cclauss/node-gyp/commit/5cde818aac715477e9e9747966bb6b4c4ed070a8))
+* change default gyp update message ([#2420](https://www.github.com/cclauss/node-gyp/issues/2420)) ([cfd12ff](https://www.github.com/cclauss/node-gyp/commit/cfd12ff3bb0eb4525173413ef6a94b3cd8398cad))
+
+
+### Core
+
+* deep-copy process.config during configure ([#2368](https://www.github.com/cclauss/node-gyp/issues/2368)) ([5f1a06c](https://www.github.com/cclauss/node-gyp/commit/5f1a06c50f3b0c3d292f64948f85a004cfcc5c87))
+
 ## [8.1.0](https://www.github.com/nodejs/node-gyp/compare/v8.0.0...v8.1.0) (2021-05-28)
 
 
