@@ -1,5 +1,17 @@
 # Changelog
 
+### [8.4.2](https://www.github.com/cclauss/node-gyp/compare/v8.4.1...v8.4.2) (2021-12-13)
+
+
+### Miscellaneous
+
+* add minimal SECURITY.md ([#2560](https://www.github.com/cclauss/node-gyp/issues/2560)) ([c2a1850](https://www.github.com/cclauss/node-gyp/commit/c2a185056e2e589b520fbc0bcc59c2935cd07ede))
+
+
+### Doc
+
+* Rename and update Common-issues.md --> docs/README.md ([#2567](https://www.github.com/cclauss/node-gyp/issues/2567)) ([2ef5fb8](https://www.github.com/cclauss/node-gyp/commit/2ef5fb86277c4d81baffc0b9f642a8d86be1bfa5))
+
 ### [8.4.1](https://www.github.com/nodejs/node-gyp/compare/v8.4.0...v8.4.1) (2021-11-19)
 
 
