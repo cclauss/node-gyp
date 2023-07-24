@@ -1,5 +1,22 @@
 # Changelog
 
+### [9.4.1](https://www.github.com/cclauss/node-gyp/compare/v9.4.0...v9.4.1) (2023-07-24)
+
+
+### Core
+
+* find python checks order changed on windows ([#2872](https://www.github.com/cclauss/node-gyp/issues/2872)) ([b030555](https://www.github.com/cclauss/node-gyp/commit/b030555cdb754d9c23906e7e707115cd077bbf76))
+
+
+### Doc
+
+* Update windows installation instructions in README.md ([#2882](https://www.github.com/cclauss/node-gyp/issues/2882)) ([c9caa2e](https://www.github.com/cclauss/node-gyp/commit/c9caa2ecf3c7deae68444ce8fabb32d2dca651cd))
+
+
+### Tests
+
+* increase mocha timeout ([#2887](https://www.github.com/cclauss/node-gyp/issues/2887)) ([445c28f](https://www.github.com/cclauss/node-gyp/commit/445c28fabc5fbdf9c3bb3341fb70660a3530f6ad))
+
 ## [9.4.0](https://www.github.com/nodejs/node-gyp/compare/v9.3.1...v9.4.0) (2023-06-12)
 
 
